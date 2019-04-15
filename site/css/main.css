@@ -1,0 +1,2401 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles - FOR WHOLE SITE
+   ========================================================================== */
+.site{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 40px;'
+        max-width: 1280px;
+    }
+
+label {
+        display: none;
+    }
+
+
+/* headings 
+==========================================================================*/
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 20px;
+}
+
+
+
+
+
+/* ==========================================================================
+   header bar for top of site
+   ========================================================================== */
+
+
+    .logo-small {
+        float: left;
+    }
+
+    nav {
+      float: right;
+      padding-left: 30px;
+      text-align: right;
+
+    }
+
+    nav li {
+      float: left;
+      text-align: center;
+      list-style-type: none;
+
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: black;
+    }
+
+    .sign-in-action {
+        float: right;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    .sign-in-action a {
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #4495CE;
+        text-align: center;
+
+    }
+
+    .logo-big {
+        margin: 0 auto;
+        padding-top: 10%;
+        display: block;
+        text-align: center;
+    }
+
+    .searchbar {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .searchbar form{
+        overflow: hidden;
+    }
+ 
+    #searchbar {
+        height: 44px;
+        width: 75%;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        float: left;
+        margin: 0 5px 0 0;
+    }
+
+    #searchbar:focus{
+        outline: none;
+    }
+
+   #submit {
+        height: 44px;
+        width: 20%;
+        background-color: #4495CE;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        font-family: 'Source Sans Pro', sans-serif; 
+        float: left;
+        color: white;
+    }
+
+
+    nav li a {
+        color: #4495CE;
+        opacity: 0;
+    }
+
+    nav li a {
+        transition: all 300ms ease 0s;
+    }
+
+    .sos {
+        padding-top: 50px;
+        display: inline-block;
+        opacity: 0;
+        transition: all 300ms ease 0s;
+    }
+
+    .active nav li a{
+        opacity: 1;
+    }
+
+    .active .sos {
+        opacity: 1;
+    }
+
+
+/* ==========================================================================
+   columns
+   ========================================================================== */
+
+
+    .columns {
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Source Sans Pro', sans-serif; 
+        margin-top: 100px;
+    }
+
+    .column-one {
+        width: 23%;
+        float:left;
+        padding: 10px;
+        padding-top: 70px;
+    
+    }
+
+    .column-two {
+        width: 23%;
+        float:left;
+        padding: 10px;
+    }
+
+    .column-three {
+        width: 23%;
+        float: left;
+        padding:10px;
+        padding-top: 70px;
+    }
+
+    .column-four {
+        width: 23%;
+        float: left;
+        padding: 10px;
+    }
+
+    .columns h1 {
+        color: #4495CE;
+    }
+
+    .columns ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 20px;
+        transition: all 200ms ease-in;
+        opacity: 0;
+
+    }
+
+    .columns li {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding: 5px;
+        text-align: left;
+        color: gray;
+        
+    }
+
+/*    .columns h1 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        transform: translateY(100px);
+        transition: all 200ms ease-in;
+    }*/
+
+
+/*    .payments-requests li {
+        transition: all 300ms ease 0s;
+        font-size: 15px;
+    }
+    
+    need to come back to this - not sure what da deal is
+
+    .active .payments-requests li {
+        background-color: red;
+
+    }*/
+ 
+
+
+/* ==========================================================================
+   main topics styles
+   ========================================================================== */
+
+   .payments-requests {
+        border: 1px solid #eee;
+        border-radius: 4px; 
+        height: 520px;
+        margin: 0 auto;
+        position: relative; 
+    }
+
+        .payments-requests h1 {
+            position: absolute;
+            top: 20%;
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            height: 600px;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+        }
+
+        .payments-requests ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 35px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 21%;
+
+        }
+
+        .payments-requests ul:hover {
+            opacity: 1;
+            position: absolute;
+            top: 21%;
+        }
+
+        .payments-requests:hover h1 { 
+            transform: translateY(-70px); 
+
+        }
+
+
+    .settings {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 300px;
+        position: relative;
+    }
+
+       .settings h1 {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            padding-top: 10%;
+        }
+
+        .settings ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute; 
+            top: 25%;
+
+        }
+
+        .settings:hover ul {
+            opacity: 1;
+            position: absolute; 
+            top: 25%;
+
+        }
+
+        .settings:hover h1 { 
+            transform: translateY(5px); 
+
+        }
+
+    .signing-in {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        height: 290px;
+        position: relative;
+    }
+
+        .signing-in h1 {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            padding-top: 15%;
+        }
+
+        .signing-in ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 25%;
+
+        }
+
+        .signing-in:hover ul {
+            opacity: 1;
+            position: absolute;
+            top: 25%;
+
+        }
+
+        .signing-in:hover h1 { 
+            transform: translateY(0px); 
+
+        }
+
+    .about-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 234px;
+        position: relative;
+    }
+
+        .about-venmo h1 {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+        }
+
+        .about-venmo ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute; 
+            top: 25%;
+
+        }
+
+        .about-venmo:hover ul {
+            opacity: 1;
+            position: absolute; 
+            top: 25%;
+
+        }
+
+        .about-venmo:hover h1 { 
+            transform: translateY(15px); 
+
+        }
+
+    .signing-up {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 430px;
+        position: relative;
+    }
+
+        .signing-up h1 {
+            position: absolute;
+            top: 20%;
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            height: 600px;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+        }
+
+        .signing-up ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 15%;
+
+        }
+
+        .signing-up ul:hover {
+            opacity: 1;
+            position: absolute;
+            top: 15%;
+        }
+
+        .signing-up:hover h1 { 
+            transform: translateY(-70px); 
+
+        }
+
+    .bank-transfers {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        height: 200px;
+        position: relative;
+    }
+
+        .bank-transfers h1 {
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            position: absolute;
+            top: -5%;
+        }
+
+        .bank-transfers ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 30%;
+
+        }
+
+        .bank-transfers:hover ul {
+            opacity: 1;
+            position: absolute;
+            top: 30%;
+        }
+
+        .bank-transfers:hover h1 { 
+            transform: translateY(25px); 
+
+        }
+
+
+    .in-apps {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 540px;
+        position: relative;
+    }
+
+        .in-apps h1 {
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            position: absolute;
+            top: 25%;
+        }
+
+        .in-apps ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 20px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 15%;
+
+        }
+
+        .in-apps:hover ul {
+            opacity: 1;
+            position: absolute;
+            top: 15%;
+        }
+
+        .in-apps:hover h1 { 
+            transform: translateY(-110px); 
+
+        }
+
+    .banks-cards {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        height: 540px;
+        position: relative;
+    }
+        .banks-cards h1 {
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            position: absolute;
+            top: 35%;
+        }
+
+        .banks-cards ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 25px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 22%;
+
+        }
+
+        .banks-cards:hover ul {
+            opacity: 1;
+            position: absolute;
+            top: 22%;
+        }
+
+        .banks-cards:hover h1 { 
+            transform: translateY(-150px); 
+
+        }
+
+    .accept-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;  
+        height: 340px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+        .accept-venmo h1 {
+            width: 80%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translateY(100px);
+            transition: all 200ms ease-in;
+            position: absolute;
+            top: 10%;
+        }
+
+        .accept-venmo ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 0;
+            padding: 0 0 0 30px;
+            transition: all 200ms ease-in;
+            opacity: 0;
+            position: absolute;
+            top: 20%;
+
+        }
+
+        .accept-venmo:hover ul {
+            opacity: 1;
+            position: absolute;
+            top: 20%;
+        }
+
+        .accept-venmo:hover h1 { 
+            transform: translateY(-10px); 
+
+        }
+
+/* ==========================================================================
+   get in touch section
+   ========================================================================== */
+
+   .get-in-touch {
+        width: 50%;
+        clear: both;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+        font-family: 'Source Sans Pro', sans-serif; 
+        padding-top: 100px;
+  
+   }
+
+   .top-line i {
+        padding: 25px;
+        margin: 12px;
+        margin-top: 5px;
+   }
+
+   .get-in-touch p {
+        font-size: 28px;
+        color: #4495CE;
+   }
+
+   .bottom-line a {
+        margin: 9px;
+        text-decoration: none;
+        color: #4495CE;
+   }
+
+   .twitter-share-button {
+    data-size: large;
+   }
+/* ==========================================================================
+   footer styles
+   ========================================================================== */
+
+    footer {
+        width: 100%;
+        clear: both;
+        margin-top: 100px;
+    }
+
+    footer h3 {
+        font-family: 'Source Sans Pro', sans-serif; 
+        font-size: 15px;
+        text-align: left;
+        margin: 0;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    footer li a {
+        font-family: 'Source Sans Pro', sans-serif; 
+        text-decoration: none;
+        text-align: left;
+        font-size: 12px;
+        color: #A9A9A9;
+        padding: 0;
+    }
+    
+    .footer-sections {
+        width: 60%;
+        margin: 0;
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    .learn-more {
+        float: left;
+        width: 22%;
+        margin: 0;
+        padding: 0;
+    }    
+
+    .company {
+        float: left;
+        width: 22%;
+        margin: 0;
+    }
+
+    .community {
+        float: left;
+        width: 22%;
+        margin:0;
+
+    }
+
+    .terms {
+        float: left;
+        width: 22%;
+        margin:0;
+    }
+
+    .buttons {
+        width: 30%;
+        float: right;
+        margin-top: 10px;
+        margin-right: 70px;
+    }
+
+    .app-store-button {
+        width: 120px;
+        height: 41px;
+        margin: 10px;
+        padding: 0;
+        border: solid;
+        border-color: black;
+        border-radius: 4px;
+        text-align:center;
+        display: inline-block;
+    }
+
+    .app-store-button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .play-store-button {
+        width: 120px;
+        height: 41px;
+        margin: 10px;
+        padding: 0;
+        border: solid;
+        border-color: black;
+        border-radius: 4px;
+        clear: both;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .play-store-button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .paypal-disclosure {
+        clear:both;
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif; 
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    .paypal-disclosure p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+/* ==========================================================================
+   dialog boxes - email
+   ========================================================================== */
+.dialog-boxes {
+    position: fixed;
+    top: 10px;
+    left: 28%;
+    z-index: -10;
+}
+
+.dialog-box-email {
+    height: 590px;
+    width: 570px;
+    border: 1px solid #eee;
+    border-radius: 4px;   
+    font-family: 'Source Sans Pro', sans-serif; 
+    opacity: 0;
+}
+
+.jelly {
+    animation-name: anim-open;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    pointer-events: auto;
+    opacity: 1;
+    background-color: white;
+}
+
+.dialog-box-email p {
+    font-size: 12px;
+    float: right;
+    margin-right: 10px;
+}
+.dialog-box-email .email-instructions {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.dialog-box-email .email-instructions li {
+    font-size: 16px;
+    padding-top: 5%;
+
+}
+
+.dialog-box-email .email-instructions li a {
+    text-decoration: none;
+    color: #4495CE;
+}
+
+.email-form {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3%;
+    text-align: center;
+    -webkit-padding-start: 0px;
+}
+
+.email-form li {
+    width: 100%;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.email-form input[type="text"] {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    margin-top: 3%;
+    border: 1px solid #eee;
+    border-radius: 4px;   
+}
+
+
+.form-column {
+    float: left;
+    list-style: none;
+    width: 100%;
+    padding-top: 3%;
+    list-style: none;
+    margin: 0 auto;
+    -webkit-padding-start: 0px;
+    text-align: center;
+}
+
+.form-column li {
+    width: 100%;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.form-column textarea[name="message"] {
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;   
+    margin: 0 auto;
+}
+
+.form-column input[name="send"] {
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;   
+    margin: 0 auto;
+    color: white;
+    background-color: #4495CE;
+    margin-top: 2%;
+}
+
+
+/* ==========================================================================
+   chat dialog box 
+   ========================================================================== */
+
+.dialog-boxes-two {
+    position: fixed;
+    top: 50px;
+    left: 28%;
+    z-index: -10;
+}
+
+   .dialog-box-chat {
+    font-size: 12px;
+    margin-right: 10px;
+    height: 500px;
+    width: 570px;
+    border: 1px solid #eee;
+    border-radius: 4px;   
+    font-family: 'Source Sans Pro', sans-serif; 
+    opacity: 0;
+    padding-top: 16px;
+   }
+
+   .dialog-box-chat h6 {
+    font-size: 12px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 0px;
+}
+
+   .dialog-box-chat p {
+        font-size: 15px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+           }
+
+   .dialog-box-chat h4 {
+        font-size: 20px;
+        color: #4495CE;
+        text-align: center;
+   }
+
+    .dialog-box-chat h5 {
+        font-size: 20px;
+        color: #4495CE;
+        text-align: center;
+   }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/* mobile */ 
+@media screen and (max-width: 1220px) {
+.logo-small {
+        float: left;
+    }
+
+    nav {
+      float: right;
+      padding-left: 30px;
+      text-align: right;
+
+    }
+
+    nav li {
+      float: left;
+      text-align: center;
+      list-style-type: none;
+
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: black;
+    }
+
+    .sign-in-action {
+        float: right;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    .sign-in-action a {
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #4495CE;
+        text-align: center;
+
+    }
+
+    .logo-big {
+        margin: 0 auto;
+        padding-top: 10%;
+        display: block;
+        text-align: center;
+    }
+
+    .searchbar {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .searchbar form{
+        overflow: hidden;
+    }
+ 
+    #searchbar {
+        height: 44px;
+        width: 75%;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        float: left;
+        margin: 0 5px 0 0;
+    }
+
+    #searchbar:focus{
+        outline: none;
+    }
+
+   #submit {
+        height: 44px;
+        width: 20%;
+        background-color: #4495CE;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        font-family: 'Source Sans Pro', sans-serif; 
+        float: left;
+        color: white;
+    }
+
+
+    nav li a {
+        color: #4495CE;
+        opacity: 1;
+    }
+
+    nav li a {
+        transition: none;
+    }
+
+    .sos {
+        padding-top: 50px;
+        display: inline-block;
+        opacity: 1;
+        transition: none;
+    }
+
+    .active nav li a{
+        opacity: 1;
+    }
+
+    .active .sos {
+        opacity: 1;
+    }
+
+
+.columns {
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Source Sans Pro', sans-serif; 
+        margin-top: 100px;
+    }
+
+    .column-one {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .column-two {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .column-three {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .column-four {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .columns h1 {
+        color: #4495CE;
+        font-size: 15px;
+    }
+
+    .columns ul {
+        list-style: none;
+        transition: none;
+        opacity: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .columns li {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        padding: 5px;
+        text-align: left;
+        color: gray;
+    }
+
+
+
+    .payments-requests {
+        border: 1px solid #eee;
+        border-radius: 4px; 
+        margin: 0 auto;
+        height: 330px; 
+    }
+
+        .payments-requests h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .payments-requests ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .payments-requests ul:hover {
+            opacity: 1;
+            position: static;
+        }
+
+        .payments-requests:hover h1 { 
+            transform: none;
+
+        }
+
+    
+    .settings {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 250px;
+    }
+
+       .settings h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .settings ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .settings:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .settings:hover h1 { 
+            transform: none;
+
+        }    
+
+    .signing-in {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 220px;
+    }
+
+        .signing-in h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .signing-in ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .signing-in:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .signing-in:hover h1 { 
+            transform: none;
+
+        }
+
+
+
+    .about-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 190px;
+    }
+
+        .about-venmo h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .about-venmo ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .about-venmo:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .about-venmo:hover h1 { 
+            transform: none; 
+
+        }
+
+
+    .signing-up {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 310px;
+    }
+
+        .signing-up h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .signing-up ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .signing-up ul:hover {
+            opacity: 1;
+            position: static;
+        }
+
+        .signing-up:hover h1 { 
+            transform: none;
+
+        }
+
+    .bank-transfers {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 160px;
+    }
+
+        .bank-transfers h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .bank-transfers ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+
+        }
+
+        .bank-transfers:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .bank-transfers:hover h1 { 
+            transform: none;
+
+        }
+
+    .in-apps {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 370px;
+    }
+
+        .in-apps h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .in-apps ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .in-apps:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .in-apps:hover h1 { 
+            transform: none;
+        }
+
+
+    .banks-cards {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 340px;
+    }
+        .banks-cards h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .banks-cards ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .banks-cards:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .banks-cards:hover h1 { 
+            transform: none;
+
+        }
+
+    .accept-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 240px;
+    }
+
+        .accept-venmo h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .accept-venmo ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .accept-venmo:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .accept-venmo:hover h1 { 
+            transform: none;
+
+        }
+
+
+/* 800px */ 
+@media screen and (max-width: 800px) {
+.logo-small {
+        float: left;
+    }
+
+    nav {
+      float: right;
+      padding-left: 30px;
+      text-align: right;
+
+    }
+
+    nav li {
+      float: left;
+      text-align: center;
+      list-style-type: none;
+
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: black;
+    }
+
+    .sign-in-action {
+        float: right;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    .sign-in-action a {
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #4495CE;
+        text-align: center;
+
+    }
+
+    .logo-big {
+        margin: 0 auto;
+        padding-top: 10%;
+        display: block;
+        text-align: center;
+    }
+
+    .searchbar {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .searchbar form{
+        overflow: hidden;
+    }
+ 
+    #searchbar {
+        height: 44px;
+        width: 75%;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        float: left;
+        margin: 0 5px 0 0;
+    }
+
+    #searchbar:focus{
+        outline: none;
+    }
+
+   #submit {
+        height: 44px;
+        width: 20%;
+        background-color: #4495CE;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        font-family: 'Source Sans Pro', sans-serif; 
+        float: left;
+        color: white;
+    }
+
+
+    nav li a {
+        color: #4495CE;
+        opacity: 1;
+    }
+
+    nav li a {
+        transition: none;
+    }
+
+    .sos {
+        padding-top: 50px;
+        display: inline-block;
+        opacity: 1;
+        transition: none;
+    }
+
+    .active nav li a{
+        opacity: 1;
+    }
+
+    .active .sos {
+        opacity: 1;
+    }
+
+
+.columns {
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Source Sans Pro', sans-serif; 
+        margin-top: 100px;
+    }
+
+    .column-one {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .column-two {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .column-three {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .column-four {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .columns h1 {
+        color: #4495CE;
+        font-size: 15px;
+    }
+
+    .columns ul {
+        list-style: none;
+        transition: none;
+        opacity: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .columns li {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        padding: 5px;
+        text-align: left;
+        color: gray;
+    }
+
+
+
+    .payments-requests {
+        border: 1px solid #eee;
+        border-radius: 4px; 
+        margin: 0 auto;
+        height: 370px; 
+    }
+
+        .payments-requests h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .payments-requests ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .payments-requests ul:hover {
+            opacity: 1;
+            position: static;
+        }
+
+        .payments-requests:hover h1 { 
+            transform: none;
+
+        }
+
+    
+    .settings {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 250px;
+    }
+
+       .settings h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .settings ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .settings:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .settings:hover h1 { 
+            transform: none;
+
+        }    
+
+    .signing-in {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 250px;
+    }
+
+        .signing-in h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .signing-in ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .signing-in:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .signing-in:hover h1 { 
+            transform: none;
+
+        }
+
+
+
+    .about-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 190px;
+    }
+
+        .about-venmo h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .about-venmo ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .about-venmo:hover ul {
+            opacity: 1;
+            position: static;
+
+        }
+
+        .about-venmo:hover h1 { 
+            transform: none; 
+
+        }
+
+
+    .signing-up {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 350px;
+    }
+
+        .signing-up h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .signing-up ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .signing-up ul:hover {
+            opacity: 1;
+            position: static;
+        }
+
+        .signing-up:hover h1 { 
+            transform: none;
+
+        }
+
+    .bank-transfers {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 160px;
+    }
+
+        .bank-transfers h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .bank-transfers ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+
+        }
+
+        .bank-transfers:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .bank-transfers:hover h1 { 
+            transform: none;
+
+        }
+
+    .in-apps {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 410px;
+    }
+
+        .in-apps h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .in-apps ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .in-apps:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .in-apps:hover h1 { 
+            transform: none;
+        }
+
+
+    .banks-cards {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 390px;
+    }
+        .banks-cards h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .banks-cards ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .banks-cards:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .banks-cards:hover h1 { 
+            transform: none;
+
+        }
+
+    .accept-venmo {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: static;
+        height: 300px;
+    }
+
+        .accept-venmo h1 {
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            transform: none;
+            transition: none;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .accept-venmo ul {
+            list-style: none;
+            transition: none;
+            opacity: 1;
+            position: static;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .accept-venmo:hover ul {
+            opacity: 1;
+            position: static;
+        }
+
+        .accept-venmo:hover h1 { 
+            transform: none;
+
+        }
+
+.get-in-touch {
+        width: 100%;
+        clear: both;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+        font-family: 'Source Sans Pro', sans-serif; 
+        padding-top: 100px;
+  
+   }
+
+   .top-line i {
+        padding: 25px;
+        margin: 12px;
+        margin-top: 5px;
+   }
+
+   .get-in-touch p {
+        font-size: 20px;
+        color: #4495CE;
+   }
+
+   .bottom-line a {
+        margin: 9px;
+        text-decoration: none;
+        color: #4495CE;
+   }
+
+   .twitter-share-button {
+    data-size: large;
+   }
+/* 
+
+
+
+    footer {
+        width: 100%;
+        clear: both;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    footer h3 {
+        font-family: 'Source Sans Pro', sans-serif; 
+        font-size: 10px;
+        text-align: left;
+        margin: 0;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    footer li a {
+        font-family: 'Source Sans Pro', sans-serif; 
+        text-decoration: none;
+        text-align: left;
+        font-size: 10px;
+        color: #A9A9A9;
+        padding: 0;
+    }
+    
+    .footer-sections {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 170px;
+    }
+
+    .learn-more {
+        float: left;
+        width: 22%;
+        margin: 0;
+        padding: 0;
+    }    
+
+    .company {
+        float: left;
+        width: 22%;
+        margin: 0;
+    }
+
+    .community {
+        float: left;
+        width: 22%;
+        margin:0;
+
+    }
+
+    .terms {
+        float: left;
+        width: 22%;
+        margin:0;
+    }
+
+    .buttons {
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .app-store-button {
+        width: 120px;
+        height: 41px;
+        margin: 10px;
+        padding: 0;
+        border: solid;
+        border-color: black;
+        border-radius: 4px;
+        text-align:center;
+        display: inline-block;
+    }
+
+    .app-store-button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .play-store-button {
+        width: 120px;
+        height: 41px;
+        margin: 10px;
+        padding: 0;
+        border: solid;
+        border-color: black;
+        border-radius: 4px;
+        clear: both;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .play-store-button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .paypal-disclosure {
+        clear:both;
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif; 
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    .paypal-disclosure p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
